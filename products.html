@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-IT: Products</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/icon.png"/> 
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" style="width:100px;">
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li class ="highlighted"><a href="products.html" style="color:black;">PRODUCTS</a></li>
+           <form action="#" style = "margin-right:50px;">
+            <button type="submit" class="fas fa-search"></button>
+            <input type="search" class="search-data" size="60" required>
+            </form>
+           <li><a href="cart.html">MY CART <i class="fas fa-shopping-cart cart"></i></a></li>
+           <li class ="log"><a href="login.html" style="color:white;">LOGIN</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+     </nav>
+
+     <h1 class="titles">Tech-IT<span class="titles2"> Products</span> </h1>
+        <center>
+         <hr style="width:15%"/>
+        </center>
+
+     <div id="FilterContainer" class="FilterContain" style ="margin-top:40px;">
+      <center>
+         <button class="FilterButton " onclick="FilterItem('all')"> ALL</button>
+         
+         <button class="FilterButton active" onclick="FilterItem('services')"> SERVICES </button>
+      </center>
+    </div>
+    
+    <div class="container">
+  
+
+      
+<center>
+      <div class="Filtering services">
+        <div class="ShopItem">
+        <img src="images/products/IT.png">
+        <h2 class ="innertitle"> IT Consultation </h2>
+        <span class ="price"> ₱250/hr <br> <br> <span class ="popularity"> 2.2k sold</span></span>
+        <br> <br>
+        <a class="button" href="#">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="Filtering services">
+        <div class="ShopItem">
+        <img src="images/products/Site.png">
+        <h2 class ="innertitle"> Afford-A-Site </h2>
+        <span class ="price"> Price varies <br> <br> <span class ="popularity"> 3.5k sold</span></span>
+        <br> <br>
+        <a class="button" href="#">Add To Cart</a>
+        </div>
+      </div>
+
+      <div class="Filtering services">
+        <div class="ShopItem">
+        <img src="images/products/Prog.png">
+        <h2 class ="innertitle"> Afford-A-Prog </h2>
+        <span class ="price"> Price varies <br> <br> <span class ="popularity"> 1.5k sold</span></span>
+        <br> <br>
+        <a class="button" href="#">Add To Cart</a>
+        </div>
+      </div>
+
+      
+    </div>
+</center>
+     <footer style="margin-top: 20px;">
+        <p>COPYRIGHT &copy; 2023 - TECH - IT (GONZAGA, DANGO, JIMENEZ)</p>
+     </footer>
+
+     <script src="js/functions.js"></script>
+</body>
+</html>

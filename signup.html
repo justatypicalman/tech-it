@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-IT: Login</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/icon.png"/> 
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap');
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.login-page {
+  width: 550px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+  margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 550px;
+  margin-top:-105px;
+  margin-bottom:56px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border:2px solid lightblue;
+}
+.form input {
+  font-family: 'Bitter', serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 18px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.form button {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color:black;
+  border-bottom:2px solid darkgrey;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-top:10px;
+}
+
+.form button:hover{
+    background-color:darkcyan;
+    transition:0.7s;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body{
+    background: url("images/background1080.png") no-repeat ;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(70,70,70,0.6);
+    background-blend-mode: lighten;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" style="width:100px;">
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="products.html">PRODUCTS</a></li>
+           <form action="#" style = "margin-right:50px;">
+            <button type="submit" class="fas fa-search"></button>
+            <input type="search" class="search-data" size="60" required>
+            </form>
+           <li><a href="cart.html">MY CART <i class="fas fa-shopping-cart cart"></i></a></li>
+           <li class ="log"><a href="login.html" style="color:white;">LOGIN</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+     </nav>
+
+     <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h3 style="font-family: 'Poppins', sans-serif;font-size:25px;margin-top:25px;">SIGNUP FORM</h3>
+              <h3><img src="images/icon.png" style ="width:70%;margin-top:20px;"></h3>
+            </div>
+          </div>
+          <form class="login-form" id="signup-form">
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+            <input type="text" placeholder="Mobile No."/>
+            <input type="text" placeholder="Username"/>
+            <input type="password" placeholder="Password"/>
+            <input type="password" placeholder="Re-type Password"/>
+            <input type="checkbox" style="position: relative; width: 20px; z-index: 1;height: 20px;left: -11em;top: 0.8em"><p style="font-size: 18px;font-family: 'Poppins', sans-serif; position: relative; left: -0.6em;top: -1.2em">Agree with Tech-IT's terms and conditions</p>           
+            <button>signup</button>
+            <p class="message" style="font-size:18px;">Already have an account? <a href="login.html"><br>Login here</a></p>
+          </form>
+        </div>
+      </div> 
+    
+      <footer style ="bottom:0;padding:25px;">
+        <p>COPYRIGHT &copy; 2023 - TECH - IT (GONZAGA, DANGO, JIMENEZ)</p>
+     </footer>
+</body>
+</html>

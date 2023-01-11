@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-IT: Cart</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="images/icon.png"/> 
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" style="width:100px;">
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="products.html">PRODUCTS</a></li>
+           <form action="#" style = "margin-right:50px;">
+            <button type="submit" class="fas fa-search"></button>
+            <input type="search" class="search-data" size="60" required>
+            </form>
+           <li class ="highlighted"><a href="cart.html" style="color:black;">MY CART <i class="fas fa-shopping-cart cart"></i></a></li>
+           <li class ="log"><a href="login.html" style="color:white;">LOGIN</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+     </nav>
+
+     <h1 class="titles" style="padding-bottom:25px;">My<span class="titles2"> Cart</span> </h1>
+     <center>
+      <hr style="width:15%;"/>
+     </center>
+
+     <div class="parent">
+        <div class="child">
+            <div class="rectangle">
+                <h2 class = "rect">ORDER</h2>
+                <div class = "innerects">
+                    <div class="item-holder">
+                        <div class="item-holder-item">
+                                <center> <img src="images/products/IT.png"> </center>
+                            </div>
+                        <div class="item-holder-item"> 
+                              IT Consultation
+                            </div>
+                        <div class="item-holder-item"> 
+                            ₱ 1,000.00
+                        </div>
+                        <div class="item-holder-item"> 
+                                     Hours
+                            </div>
+                        <div class="item-holder-item1">
+                                <div id="decrement-count">
+                                  <button style ="float:left;"> <i class="fa fa-angle-left" aria-hidden="true"> </i></button>
+                                </div>
+                                <div id="total-count">
+                                </div>
+                                <div id="increment-count">
+                                    <button style="float:right ;"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item-holder">
+                        <div class="item-holder-item">
+                                <center> <img src="images/products/Site.png"> </center>
+                            </div>
+                        <div class="item-holder-item"> 
+                                Afford-A-Site
+                            </div>
+                        <div class="item-holder-item"> 
+                            ₱ 3,000.00
+                        </div>
+                        <div class="item-holder-item"> 
+                                     Quantity 
+                            </div>
+                        <div class="item-holder-item1">
+                                <div id="decrement-count1">
+                                  <button style ="float:left;"> <i class="fa fa-angle-left" aria-hidden="true"> </i></button>
+                                </div>
+                                <div id="total-count1">
+                                </div>
+                                <div id="increment-count1">
+                                    <button style="float:right ;"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="item-holder">
+                        <div class="item-holder-item">
+                                <center> <img src="images/products/Prog.png"> </center>
+                            </div>
+                        <div class="item-holder-item"> 
+                                Afford-A-Prog
+                            </div>
+                        <div class="item-holder-item"> 
+                            ₱ 2,500.00
+                        </div>
+                        <div class="item-holder-item"> 
+                                     Quantity 
+                            </div>
+                        <div class="item-holder-item1">
+                                <div id="decrement-count2">
+                                  <button style ="float:left;"> <i class="fa fa-angle-left" aria-hidden="true"> </i></button>
+                                </div>
+                                <div id="total-count2">
+                                </div>
+                                <div id="increment-count2">
+                                    <button style="float:right ;"> <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangle2">
+                    <h2 class = "rect">Mode of Payment</h2>
+                    <div class = "innerects2">
+                        <div> <span style="font-size: 30px;"> 
+                            PayPal  <i class="fa-brands fa-paypal"></i> <input type="radio"> 
+                             </span> </div>
+                        <div> <span style="font-size: 30px;"> 
+                            E-Wallet <i class="fa-solid fa-wallet"></i> <input type="radio">
+                           </span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="rectangle3">
+                <h2 class = "rect">TOTAL SUMMARY</h2>
+                <div class = "innerects3">
+                <table>
+                    <tr>
+                        <th colspan="1"> Products </th>
+                        <th colspan="1"> Quantity/Hours </th>
+                        <th colspan="1"> Price </th>
+                    </tr>
+                    <tr>
+                        <td>IT Consultation </td>
+                        <td> 4 </td>
+                        <td> ₱ 1,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Afford-A-Site </td>
+                        <td> 1 </td>
+                        <td> ₱ 3,000.00</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid black">
+                        <td>Afford-A-Prog</td>
+                        <td> 1 </td>
+                        <td> ₱ 2,500.00</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> <hr style="border: 2px solid black; width: 100%;"> </td>
+                    </tr>
+                    <tr>
+                        <td>  </td>
+                        <td>  </td>
+                        <td> ₱ 6,500.00</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="rectangle4">
+                    <h2 class = "rect">PERSONAL INFORMATION</h2>
+                    <div class = "innerects4">
+                        <span style="text-align:left;">
+                        <h3> &nbsp;Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sam Abiel Gonzaga</h3>
+                        <h3> &nbsp;Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;133 A Bayawak Street, Ortigas</h3>
+                        <h3> &nbsp;Email Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;samabielgonzaga@gmail.com</h3>
+                        <h3> &nbsp;Contact Number: &nbsp;09123123123</h3>
+                        </span>
+                    </div>
+                    <a class="button2" href="#" style ="margin-top:10px;">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style ="position:fixed;bottom:0;padding:25px;">
+        <p>COPYRIGHT &copy; 2023 - TECH - IT (GONZAGA, DANGO, JIMENEZ)</p>
+     </footer>
+     <script src="js/incre.js"> </script>
+</body>
+</html>
